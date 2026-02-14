@@ -33,7 +33,7 @@ export function useTableOfContents(containerSelector = '.chapter-content') {
 
     // Default to first heading
     if (headings.value.length && !activeId.value) {
-      activeId.value = headings.value[0].id
+      activeId.value = headings.value[0]!.id
     }
   }
 
